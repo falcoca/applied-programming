@@ -24,6 +24,18 @@
 
     <div class="container mt-5">
       <h1>KIEI-451 Casino!</h1>
+
+      <%= @dice %>
+      <% for die in @dice %>
+
+      <img src="http://golearntocode.com/images/dice/<%= die %>.png">
+    
+    </div>
+
+    <div class="container mt-5">
+        <!-- Roll Again button!!!! -->
+        <a href="/" class="btn btn-success">Roll again</a>
+        <a href="/tacos" class="btn btn-danger">Nope</a>
     </div>
 
     <!-- Optional JavaScript -->
