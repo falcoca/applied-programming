@@ -9,5 +9,7 @@ get "/" do
 end
 
 get "/map" do
-    params("location")
+    @location = params("location")
+    location = Geocoder.search("Paris")
+    view "map"
 end
